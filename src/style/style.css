@@ -1,0 +1,116 @@
+/* Estilos generales para toda la aplicación */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #121212; /* Fondo más oscuro */
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #222; /* Fondo aún más oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  h1, h2 {
+    color: #f1f1f1;
+    text-align: center;
+    background: linear-gradient(90deg, #ff6f61, #ffeb3b, #4caf50, #3f51b5, #9c27b0); /* Arcoiris */
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  
+  button {
+    padding: 0.8rem 1.2rem;
+    background: linear-gradient(90deg, #ff6f61, #ffeb3b, #4caf50, #3f51b5, #9c27b0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #3f51b5, #9c27b0, #ffeb3b, #ff6f61, #4caf50);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Efecto de brillo */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sutil brillo alrededor de la tabla */
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #444; /* Línea de separación entre filas */
+  }
+  
+  th {
+    background: linear-gradient(90deg, #4caf50, #3f51b5);
+    color: white;
+    border-top: 2px solid #555; /* Línea de separación en la parte superior */
+  }
+  
+  td {
+    background-color: #333; /* Fondo oscuro para las celdas */
+    color: white;
+  }
+  
+  td button {
+    padding: 0.5rem;
+    background: linear-gradient(90deg, #ff6f61, #ffeb3b, #4caf50, #3f51b5, #9c27b0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  td button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #9c27b0, #ff6f61, #ffeb3b, #4caf50, #3f51b5);
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #ff6f61;
+  }
+  

@@ -1,0 +1,93 @@
+/* Estilos específicos para la vista de productos */
+.products-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #222; /* Fondo más oscuro para productos */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Efecto de sombra sutil */
+  }
+  
+  .products-container h2 {
+    text-align: center;
+    color: #f1f1f1;
+    background: linear-gradient(90deg, #ff6f61, #ffeb3b, #4caf50, #3f51b5, #9c27b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .products-container button {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(90deg, #ff6f61, #ffeb3b, #4caf50, #3f51b5, #9c27b0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+  }
+  
+  .products-container button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #9c27b0, #ff6f61, #ffeb3b, #4caf50, #3f51b5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Efecto de brillo */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #222;
+  }
+  
+  thead {
+    background: linear-gradient(90deg, #4caf50, #3f51b5);
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #222;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #222;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #222; /* Línea de separación entre filas */
+  }
+  
+  th {
+    color: white;
+  }
+  
+  td {
+    color: #f1f1f1;
+  }
+  
+  td .action-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  
+  td .action-btn.edit {
+    background: linear-gradient(90deg, #4caf50, #3f51b5);
+    color: white;
+  }
+  
+  td .action-btn.delete {
+    background: linear-gradient(90deg, #f44336, #9c27b0);
+    color: white;
+  }
+  
+  td .action-btn:hover {
+    opacity: 0.8;
+    background: linear-gradient(90deg, #9c27b0, #ff6f61, #ffeb3b, #4caf50, #3f51b5);
+  }
+  
