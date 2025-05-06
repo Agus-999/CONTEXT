@@ -16,6 +16,7 @@ const UnicornsContainer = () => {
     name: "",
     age: "",
     color: "",
+    poder: "",
   };
 
   const handleSubmit = (values, { resetForm }) => {

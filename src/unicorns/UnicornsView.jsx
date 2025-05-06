@@ -1,6 +1,6 @@
 import React from "react";
 import { useUnicornForm } from "./useUnicornForm";
-import "../style/unicorns.css"
+import "../style/unicorns.css";
 
 const UnicornsView = ({ unicorns, initialValues, onSubmit, onEdit, onDelete }) => {
   const formik = useUnicornForm({ initialValues, onSubmit });
@@ -36,6 +36,14 @@ const UnicornsView = ({ unicorns, initialValues, onSubmit, onEdit, onDelete }) =
         />
         {formik.errors.color && <span className="error">{formik.errors.color}</span>}
 
+        <input
+          name="poder"
+          placeholder="Poder"
+          value={formik.values.poder}
+          onChange={formik.handleChange}
+        />
+        {formik.errors.poder && <span className="error">{formik.errors.poder}</span>}
+
         <button type="submit">
           {initialValues._id ? "Actualizar" : "Agregar"}
         </button>
@@ -48,6 +56,7 @@ const UnicornsView = ({ unicorns, initialValues, onSubmit, onEdit, onDelete }) =
             <th>Nombre</th>
             <th>Edad</th>
             <th>Color</th>
+            <th>Poder</th>
             <th>Acciones</th>
           </tr>
         </thead>
@@ -57,6 +66,7 @@ const UnicornsView = ({ unicorns, initialValues, onSubmit, onEdit, onDelete }) =
               <td className="table-cell">{u.name}</td>
               <td className="table-cell">{u.age}</td>
               <td className="table-cell">{u.color}</td>
+              <td className="table-cell">{u.poder}</td>
               <td className="table-cell">
                 <button onClick={() => onEdit(u)}>Editar</button>
                 <button onClick={() => onDelete(u._id)}>Eliminar</button>

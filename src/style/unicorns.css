@@ -1,4 +1,19 @@
 /* Estilos específicos para la vista de unicornios */
+body {
+  background-color: #222;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: auto; /* Habilita las barras de desplazamiento */
+  padding: 20px;
+  box-sizing: border-box;
+}
 form {
     display: flex;
     flex-direction: column;

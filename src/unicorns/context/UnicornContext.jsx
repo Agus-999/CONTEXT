@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const UnicornContext = createContext();
 
-const API_URL = "https://crudcrud.com/api/c0f28547fd1b45d298d8f509880f7d0a/unicorns";
+const API_URL = "https://crudcrud.com/api/910a7c623f5e4122922620ebf5be5c92/unicorns";
 
 export const UnicornProvider = ({ children }) => {
   const [unicorns, setUnicorns] = useState([]);
