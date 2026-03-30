@@ -28,28 +28,28 @@ Un ecosistema Frontend de alto rendimiento desarrollado con **React** y **Vite**
 ```
 
 ### 🚀 Funcionalidades Técnicas
-* **Gestión Multi-Módulo: Implementación de CRUDs completos con ruteo dinámico ( /crear, /editar/:id).
+* **Gestión Multi-Módulo:** Implementación de CRUDs completos con ruteo dinámico ( /crear, /editar/:id).
 
-* **Formularios Inteligentes: Feedback visual inmediato y manejo de errores mediante bloques try/catch.
+* **Formularios Inteligentes:** Feedback visual inmediato y manejo de errores mediante bloques try/catch.
 
-* **Diseño UI Avanzado: Interfaz moderna y responsiva utilizando el ecosistema de PrimeReact.
+* **Diseño UI Avanzado:** Interfaz moderna y responsiva utilizando el ecosistema de PrimeReact.
 
-* **Persistencia Híbrida: Sincronización de estado entre memoria global del cliente y almacenamiento persistente en el navegador.
+* **Persistencia Híbrida:** Sincronización de estado entre memoria global del cliente y almacenamiento persistente en el navegador.
 
 ### ⚙️ Instalación y Despliegue
-* **Clonar el repositorio:
+* **Clonar el repositorio:**
 
 ```
 git clone [https://github.com/Agus-999/react-advanced-architecture.git](https://github.com/Agus-999/react-advanced-architecture.git)
 ```
 
-* **Instalar dependencias:
+* **Instalar dependencias:**
 
 ```
 npm install
 ```
 
-Ejecutar en entorno de desarrollo:
+* **Ejecutar en entorno de desarrollo:**
 ```
 npm run dev
 ```
