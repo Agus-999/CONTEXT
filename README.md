@@ -1,96 +1,56 @@
-# 🦄 Proyecto Individual – Unicornios y Productos 🛍️
+# ⚛️ React Advanced Architecture & State Management System
 
-Este proyecto es una extensión y refactorización del trabajo grupal anterior. Se ha implementado un módulo de **Unicornios** usando contexto global y se ha agregado un nuevo módulo independiente de **Productos** con su propio manejo de estado.
+Un ecosistema Frontend de alto rendimiento desarrollado con **React** y **Vite**, diseñado para demostrar la implementación de patrones de arquitectura modernos, gestión de estado global y escalabilidad modular. Este sistema integra el manejo de múltiples entidades con lógicas de persistencia diferenciadas.
 
----
+### 🛠️ Stack Tecnológico
+* **Core:** React.js (Vite) + React Router DOM.
+* **State Management:** Context API (Global State) para distribución de datos eficiente.
+* **Form Handling:** Formik + Yup (Esquemas de validación complejos).
+* **UI Components:** PrimeReact (Componentes industriales de alta calidad).
+* **Logic & Hooks:** Custom Hooks personalizados (`useUnicornForm`).
+* **Persistence:** LocalStorage API y consumo de APIs externas.
 
-## 🚀 Tecnologías Utilizadas
+### 🌟 Arquitectura y Patrones Implementados
+* **Global Context Pattern:** Implementación de un `UnicornContext` para centralizar la lógica de negocio y evitar el "prop drilling".
+* **Separación de Concernimientos (SoC):** Desacoplamiento estricto entre la capa de presentación (Views), la lógica de estado (Context) y la validación (Formik).
+* **Modular Routing:** Estructura de ruteo segmentada por carpetas funcionales, permitiendo el mantenimiento independiente de cada módulo.
+* **Validation Schemas:** Validación robusta en tiempo real para asegurar la integridad de los datos de entrada.
 
-- React + Vite
-- React Router DOM
-- Context API
-- Formik + Yup
-- PrimeReact
-- LocalStorage (para productos)
-- CSS personalizado
-
----
-
-## 📁 Estructura del Proyecto
-
-src/
-├── context/
-│ └── UnicornContext.jsx # Manejo global de unicornios
-│
-├── unicorns/
-│ ├── index.jsx # Rutas de unicorns
-│ ├── UnicornsView.jsx # Tabla de unicornios
-│ ├── UnicornForm.jsx # Crear/editar unicornios
-│ └── useUnicornForm.js # Hook personalizado (opcional)
-│
-├── products/
-│ ├── index.jsx # Rutas de productos
-│ ├── ProductsView.jsx # Lista de productos
-│ ├── ProductForm.jsx # Crear productos
-│ └── productsData.js # Fuente local de datos
-│
-├── style/
-│ ├── style.css # Tema general oscuro colorido
-│ ├── unicorns.css # Estilo para módulo unicornios
-│ └── products.css # Estilo para módulo productos
-│
-└── App.jsx # Ruteo global
-
----
-
-## ⚙️ Instalación y Uso
-
-1. **Clonar el repositorio**
-
-```bash
-git clone https://github.com/tu-usuario/mi-proyecto-unicornios.git
-cd mi-proyecto-unicornios
+### 📁 Estructura del Ecosistema
+```src/
+├── context/       # Capa de Estado Global (Context API)
+├── unicorns/      # Módulo A: Gestión de entidades con API externa
+│   ├── components # Vistas y formularios modulares
+│   └── hooks      # Lógica de formulario desacoplada
+├── products/      # Módulo B: Gestión de catálogo con persistencia local
+├── style/         # Diseño UI modular y temas personalizados
+└── App.jsx        # Orquestador de ruteo y proveedores de contexto
 ```
 
-2. **Instalar dependencias**
+### 🚀 Funcionalidades Técnicas
+* **Gestión Multi-Módulo: Implementación de CRUDs completos con ruteo dinámico ( /crear, /editar/:id).
+
+* **Formularios Inteligentes: Feedback visual inmediato y manejo de errores mediante bloques try/catch.
+
+* **Diseño UI Avanzado: Interfaz moderna y responsiva utilizando el ecosistema de PrimeReact.
+
+* **Persistencia Híbrida: Sincronización de estado entre memoria global del cliente y almacenamiento persistente en el navegador.
+
+### ⚙️ Instalación y Despliegue
+* **Clonar el repositorio:
+
+```
+git clone [https://github.com/Agus-999/react-advanced-architecture.git](https://github.com/Agus-999/react-advanced-architecture.git)
+```
+
+* **Instalar dependencias:
+
+```
 npm install
+```
 
-3. Ejecutar la aplicación
+Ejecutar en entorno de desarrollo:
+```
 npm run dev
-
-4. Abrir en navegador
-Accede a http://localhost:5173
----
-
-✨ Funcionalidades
-🦄 Unicornios
-- Listado: /unicornios
-- Crear: /unicornios/crear
-- Editar: /unicornios/editar/:id
-- Utiliza contexto global y llamadas a la API externa.
-- Formularios validados con Formik + Yup.
-- Diseño modular con separación de lógica y presentación.
-
-🛍️ Productos
-- Listado y creación: /productos
-- Datos gestionados localmente con useState y opcionalmente localStorage.
-- Totalmente desacoplado del contexto de unicornios.
-
-✅ Requisitos Cumplidos
- - Contexto global para unicornios (UnicornContext)
- - Componentes desacoplados (vista, formulario, lógica)
- - Validaciones con Formik + Yup
- - Ruteo modular por carpeta (unicorns/, products/)
- - Estilo oscuro colorido y uniforme
- - Persistencia opcional en productos
- - Separación entre lógica y diseño
- - README con instrucciones
-
-🏆 Extras Implementados
-- Manejo de errores con try/catch
-- Estilo personalizado con PrimeReact
-- Hook de formulario personalizado (useUnicornForm)
-- Feedback visual mediante estilos llamativos
-
-🧑‍💻 Autor
-Proyecto realizado por Agustin Fasano como entrega individual para la materia Programación III.
+```
+Desarrollado por Agustín Alejandro Fasano Técnico Superior en Desarrollo de Software
